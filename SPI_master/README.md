@@ -9,4 +9,4 @@ There are two interfaces for the SPI master module: system and serial. System in
 ## System Interface
 The system interface is the set of inputs and outputs that are used by the system. The system interfaces has data input and output ports, an address and three flags. Data input and output ports use a default 8-bit word size. The address is a single bit that handles the peripheral chip select. A valid flag is used by the system to indicate that a transaction must take place. Finally, two flags are used to indicate the system if the module is busy and/or the transaction is ready.
 
-![SPI master system interface protocol](img/sys_protocol.png)
+![SPI master system interface protocol](img/sys_interface.png)
