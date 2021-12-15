@@ -1,0 +1,16 @@
+{signal: [
+  { name: 'CLK_IN', wave: 'P..|..' },
+  ['INPUT',
+  	{ name: 'DATA_IN[7:0]', wave: 'x2x|..', data: 'DATA'},
+   	{ name: 'ADDR_IN', wave: 'x2x|..', data: 'ADDR'},
+  	{ name: 'VALID_IN', wave: '010|..' },
+  ],
+  {},
+  ['OUTPUT',
+   { name: 'BUSY_OUT', wave: '0.1|0.'},
+   { name: 'DATA_OUT[7:0]', wave: 'x..|2x', data: 'DATA'},
+  	{ name: 'READY_OUT', wave: '0..|10'}
+  ],
+ ],
+ config: { hscale: 2 }
+}
