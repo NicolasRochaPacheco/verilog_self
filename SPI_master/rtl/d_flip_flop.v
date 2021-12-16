@@ -14,7 +14,7 @@ reg data;
 
 // Sequential logic: store 'data_in' value in 'data' register
 always @(posedge clk_in)
-    data = data_in;
+    data = d_in;
 
 // Combinational logic: assign 'q_out' and 'q_n_out'
 assign q_out = data;
